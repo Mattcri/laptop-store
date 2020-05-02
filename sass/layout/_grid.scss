@@ -1,0 +1,29 @@
+@import '../abstracs/variables';
+@import '../abstracs/breakpoints';
+@import '../base/typography';
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: $font;
+   display: grid;
+   height: 1400px;
+   grid-template: 60px 1fr 1fr 1fr 1fr / 1fr;
+   grid-template-areas: 
+      "header"
+      "main"
+      "products"
+      "comments"
+      "footer";
+}
+
+
+
+.container {
+   width: 90%;
+   margin: 0 auto;
+}
