@@ -1,0 +1,18 @@
+@import '../abstracs/breakpoints';
+@import '../abstracs/variables';
+@import '../base/typography'; 
+
+@mixin btn {
+   width: 110px;
+   padding: 8px 10px;
+   margin: 0 10px;
+   border: 2px solid $colorBtn;
+   border-radius: 10px;
+   background: transparent;
+   cursor: pointer;
+   font-family: $font;
+   color: $colorBtn;
+   @include v-large {
+      margin: 0 15px 0 0;
+   }
+}

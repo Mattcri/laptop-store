@@ -1,0 +1,61 @@
+@import '../abstracs/breakpoints';
+@import '../abstracs/variables';
+@import '../base/typography';
+@import '../components/button';
+
+main {
+   grid-area: main;
+}
+
+.product {
+   display: flex;
+   height: 100vh;
+   align-items: center;
+   flex-direction: column;
+   @include v-large {
+      flex-direction: row;
+      height: 70vh;
+   }
+   &__description {
+      text-align: center;
+      margin: 1.5rem auto 1rem;
+      @include v-large {
+         text-align: initial;
+         margin: 0;
+         flex: 1;
+      }
+      h1 {
+         padding-bottom: 15px;
+         background: linear-gradient(to right, #45456b, #6f6f89);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+      }
+   }
+   &__btns {
+      margin-top: 2rem;
+      .button {
+         @include btn;
+         &--active {
+            background: $colorBtn;
+            color: #fff;
+         }
+      }
+   }
+   &__images {
+      @include v-large {
+         flex: 1;
+         text-align: center;
+      }
+      img {
+         width: 220px;
+         @include v-large {
+            width: 380px;
+            max-height: 332px;
+         }
+      }
+   }
+}
+
+// .product__images img {
+//    width: 220px;
+// }

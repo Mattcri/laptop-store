@@ -2,6 +2,10 @@
 @import '../abstracs/variables';
 @import '../base/typography';
 
+header {
+   grid-area: header;
+}
+
 .navigation {
    display: flex;
    align-items: center;
@@ -12,6 +16,9 @@
 .wrap-menu {
    flex: 1;
    @include v-large {
+      display: none;
+   }
+   @include v-bugs {
       display: none;
    }
    &__icon {
