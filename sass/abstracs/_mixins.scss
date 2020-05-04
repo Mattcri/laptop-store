@@ -1,0 +1,19 @@
+@mixin position-big-circle {
+   position: absolute;
+   top: 0;
+   right: 0;
+   opacity: 0.5;
+   height: 80%;
+   z-index: -1;
+   opacity: 0.4;
+}
+
+@mixin position-medium-circle {
+   position: absolute;
+   top: 30%;
+   right: 30%;
+   opacity: 0.5;
+   height: 60%;
+   z-index: -1;
+   opacity: 0.4;
+}
