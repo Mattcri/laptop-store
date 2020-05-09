@@ -12,12 +12,12 @@ body {
    font-family: $font;
    color: $colorFont;
    display: grid;
-   height: 1400px;
-   grid-template: 60px 87vh 1fr 1fr 1fr / 1fr;
+   height: 2000px;
+   grid-template: 60px 92vh 2fr 1fr 1fr / 1fr;
    grid-template-areas: 
       "header"
       "main"
-      "products"
+      "conten"
       "comments"
       "footer";
 }
