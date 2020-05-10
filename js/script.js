@@ -26,7 +26,3 @@ function changeBtnColorDisabled() {
       btnActive.style.color = "#fff"
    }
 }
-
-console.log(btns)
-console.log(btnDisabled)
-console.log(btnActive)

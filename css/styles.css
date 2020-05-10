@@ -8,7 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #5f5f79;
   display: grid;
-  height: 2000px;
+  height: 3000px;
   grid-template: 60px 92vh 2fr 1fr 1fr/1fr;
   grid-template-areas: "header" "main" "conten" "comments" "footer";
 }
@@ -140,7 +140,7 @@ main {
   margin-top: 2rem;
 }
 .product__btns .button {
-  width: 120px;
+  width: 132px;
   padding: 8px 10px;
   margin: 0 10px;
   border: 2px solid #c36cbb;
@@ -222,19 +222,20 @@ main {
 }
 
 .laptops__dell {
-  margin: 2.5rem 0;
+  margin: 3rem 0;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 .laptops__thumbnail {
-  width: 100%;
+  width: 90%;
   margin: auto;
   background: #fff;
   border-radius: 10px;
   padding: 12px;
   display: flex;
   align-items: center;
+  box-shadow: 0px 0px 18px 8px #888585;
 }
 .laptops__img {
   width: 100%;
@@ -245,6 +246,48 @@ main {
 .laptops__feature {
   width: 100%;
   text-align: center;
+}
+.laptops__tittle {
+  margin: 25px 0 10px;
+  font-size: 1.8rem;
+}
+.laptops .wrap-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0;
+}
+.laptops__buttons {
+  width: 132px;
+  padding: 8px 10px;
+  margin: 0 10px;
+  border: 2px solid #c36cbb;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  color: #c36cbb;
+  font-size: 1rem;
+  margin: 8px 5px;
+}
+@media only screen and (min-width: 768px) {
+  .laptops__buttons {
+    margin: 0 15px 0 0;
+  }
+}
+.laptops__buttons--active {
+  background: #c36cbb;
+  color: #fff;
+}
+.laptops__buttons:hover {
+  background: #c36cbb;
+  color: #fff;
+}
+.laptops__macbook {
+  margin: 3rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */
