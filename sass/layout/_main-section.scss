@@ -48,6 +48,7 @@ main {
       margin-top: 2rem;
       .button {
          @include btn;
+         margin: 0 4px;
          &--active {
             background: $colorBtn;
             color: #fff;
@@ -78,6 +79,13 @@ main {
 
 .medium-circle {
    @include position-medium-circle;
+   @include v-small {
+      display: none;
+   }
+}
+
+.small-circle {
+   @include position-small-circle;
    @include v-small {
       display: none;
    }
