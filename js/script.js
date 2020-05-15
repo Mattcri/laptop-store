@@ -3,6 +3,17 @@ const btns = document.querySelector('.product__btns')
 const btnDisabled = btns.querySelector('.button--disabled')
 const btnActive = btns.querySelector('.button--active')
 
+const icon = document.querySelector('.wrap-menu__icon')
+const list = document.querySelector('.mobile-list')
+const links = document.querySelectorAll('.mobile-list li')
+
+icon.addEventListener('click', () => {
+   list.classList.toggle('open')
+   links.forEach(link => {
+      link.classList.toggle('fade')
+   });
+});
+
 listener()
 function listener() {
    btnDisabled.addEventListener('mouseover', changeBtnColor, true)
