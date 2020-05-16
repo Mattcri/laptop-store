@@ -33,9 +33,11 @@
       @include v-large {
          width: 45%;
          margin: 0 10px;
-         transition: width 2s .2s ease;
+         transition: all 1.5s .2s ease-in-out;
+         will-change: width, transform;
          &:hover {
             width: 50%;
+            transform: rotateZ(4deg);
          }
       }
    }
