@@ -22,3 +22,12 @@
    left: 20%;
    z-index: -1;
 }
+
+@mixin img-commentaries {
+   border-radius: 50%;
+   border: 5px solid #868383;
+   text-align: center;
+   object-fit: cover;
+   width: 50%;
+   height: 235px;
+}

@@ -1,0 +1,41 @@
+@import '../abstracs/breakpoints';
+@import '../abstracs/variables';
+@import '../abstracs/mixins';
+@import '../base/typography';
+
+.commentaries {
+   grid-area: comments;
+
+}
+
+.comment {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.arrow-left__element {
+   font-size: 3rem;
+}
+.arrow-rigth__element {
+   font-size: 3rem;
+}
+
+.people {
+   display: flex;
+   width: 75%;
+   // flex-direction: column;
+   &__item {
+      text-align: center;
+      margin: 0 25px;
+   }
+   &__img {
+      @include img-commentaries;
+   }
+   &__wrap-text {
+      background: lightgrey;
+      padding: 40px;
+      border-radius: 10px;
+   }
+}

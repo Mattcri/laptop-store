@@ -398,4 +398,45 @@ main {
   }
 }
 
+.commentaries {
+  grid-area: comments;
+}
+
+.comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.arrow-left__element {
+  font-size: 3rem;
+}
+
+.arrow-rigth__element {
+  font-size: 3rem;
+}
+
+.people {
+  display: flex;
+  width: 75%;
+}
+.people__item {
+  text-align: center;
+  margin: 0 25px;
+}
+.people__img {
+  border-radius: 50%;
+  border: 5px solid #868383;
+  text-align: center;
+  object-fit: cover;
+  width: 50%;
+  height: 235px;
+}
+.people__wrap-text {
+  background: lightgrey;
+  padding: 40px;
+  border-radius: 10px;
+}
+
 /*# sourceMappingURL=styles.css.map */
