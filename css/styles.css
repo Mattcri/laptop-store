@@ -412,12 +412,10 @@ main {
   width: 100%;
 }
 
-.arrow-left__element {
+.arrow-left__element, .arrow-rigth__element {
   font-size: 3rem;
-}
-
-.arrow-rigth__element {
-  font-size: 3rem;
+  cursor: pointer;
+  color: #551a8b;
 }
 
 .people {
@@ -427,11 +425,13 @@ main {
 .people__item-one {
   text-align: center;
   margin: 0 25px;
+  transition: all 0.8s ease-in-out;
 }
 .people__item-two {
   display: none;
   text-align: center;
   margin: 0 25px;
+  transition: all 0.8s ease-in-out;
 }
 .people__img {
   border-radius: 50%;
@@ -460,6 +460,12 @@ main {
   bottom: 15px;
   font-size: 2.5rem;
   color: #5f5f795e;
+}
+.people__text::first-letter {
+  font-size: 1.5rem;
+  color: #c36cbb;
+  font-family: Rubik;
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=styles.css.map */
