@@ -7,6 +7,9 @@
 .content {
    grid-area: conten;
    background: #f1f0f0;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+   
 }
 
 .laptops {
@@ -34,7 +37,7 @@
          width: 45%;
          margin: 0 10px;
          transition: all 1.5s .2s ease-in-out;
-         will-change: width, transform;
+         will-change: transition, transform;
          &:hover {
             width: 50%;
             transform: rotateZ(4deg);

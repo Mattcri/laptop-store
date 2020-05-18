@@ -284,6 +284,8 @@ main {
 .content {
   grid-area: conten;
   background: #f1f0f0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
 }
 
 .laptops__dell {
@@ -314,7 +316,7 @@ main {
     width: 45%;
     margin: 0 10px;
     transition: all 1.5s 0.2s ease-in-out;
-    will-change: width, transform;
+    will-change: transition, transform;
   }
   .laptops__thumbnail:hover {
     width: 50%;
@@ -400,6 +402,7 @@ main {
 
 .commentaries {
   grid-area: comments;
+  align-self: center;
 }
 
 .comment {
@@ -421,7 +424,12 @@ main {
   display: flex;
   width: 75%;
 }
-.people__item {
+.people__item-one {
+  text-align: center;
+  margin: 0 25px;
+}
+.people__item-two {
+  display: none;
   text-align: center;
   margin: 0 25px;
 }
@@ -437,6 +445,21 @@ main {
   background: lightgrey;
   padding: 40px;
   border-radius: 10px;
+  position: relative;
+}
+.people__wrap-text .fa-quote-left {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  font-size: 2.5rem;
+  color: #5f5f795e;
+}
+.people__wrap-text .fa-quote-right {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  font-size: 2.5rem;
+  color: #5f5f795e;
 }
 
 /*# sourceMappingURL=styles.css.map */
