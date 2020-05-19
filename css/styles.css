@@ -13,7 +13,7 @@ body {
   grid-template-areas: "header" "main" "conten" "comments" "footer";
 }
 
-.container {
+.container-p {
   width: 90%;
   margin: 0 auto;
 }
@@ -411,27 +411,72 @@ main {
   justify-content: space-between;
   width: 100%;
 }
+@media only screen and (max-width: 576px) {
+  .comment--view-mobile {
+    flex-direction: column;
+    position: relative;
+  }
+}
 
-.arrow-left__element, .arrow-rigth__element {
+.arrow-left__element--desktop, .arrow-rigth__element--desktop {
   font-size: 3rem;
   cursor: pointer;
   color: #551a8b;
+}
+
+@media only screen and (max-width: 576px) {
+  .arrow-rigth, .arrow-left {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .arrow-mobile {
+    display: none;
+  }
+}
+.arrow-mobile .arrow-left__element--mobile, .arrow-mobile .arrow-rigth__element--mobile {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #551a8b;
+  margin: 15px 0;
+  position: absolute;
+}
+.arrow-mobile .arrow-left__element--mobile {
+  left: 40px;
+}
+.arrow-mobile .arrow-rigth__element--mobile {
+  right: 40px;
 }
 
 .people {
   display: flex;
   width: 75%;
 }
+@media only screen and (max-width: 576px) {
+  .people {
+    width: 100%;
+  }
+}
 .people__item-one {
   text-align: center;
   margin: 0 25px;
   transition: all 0.8s ease-in-out;
+}
+@media only screen and (max-width: 576px) {
+  .people__item-one {
+    display: none;
+  }
 }
 .people__item-two {
   display: none;
   text-align: center;
   margin: 0 25px;
   transition: all 0.8s ease-in-out;
+}
+.people__name {
+  margin: 10px 0;
+  font-size: 1.5rem;
 }
 .people__img {
   border-radius: 50%;
@@ -440,6 +485,12 @@ main {
   object-fit: cover;
   width: 50%;
   height: 235px;
+}
+@media only screen and (max-width: 576px) {
+  .people__img {
+    height: 160px;
+    width: 65%;
+  }
 }
 .people__wrap-text {
   background: lightgrey;
@@ -454,6 +505,12 @@ main {
   font-size: 2.5rem;
   color: #5f5f795e;
 }
+@media only screen and (max-width: 576px) {
+  .people__wrap-text .fa-quote-left {
+    left: 8px;
+    top: 7px;
+  }
+}
 .people__wrap-text .fa-quote-right {
   position: absolute;
   right: 10px;
@@ -462,10 +519,16 @@ main {
   color: #5f5f795e;
 }
 .people__text::first-letter {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #c36cbb;
   font-family: Rubik;
   font-weight: 900;
+}
+
+@media only screen and (max-width: 576px) {
+  .item:first-child {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

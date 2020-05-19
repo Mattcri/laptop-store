@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 @mixin position-big-circle {
    position: absolute;
    top: 0;
@@ -30,4 +32,8 @@
    object-fit: cover;
    width: 50%;
    height: 235px;
+   @include v-small {
+      height: 160px;
+      width: 65%;
+   }
 }
