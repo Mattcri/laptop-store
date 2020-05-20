@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="css/styles.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap" rel="stylesheet">
+   <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
    <title>Laptop Store</title>
 </head>
 
@@ -25,8 +26,8 @@
             <nav class="nav">
                <ul class="nav__list">
                   <li><a class="nav__item" href="#">Specs</a></li>
-                  <li><a class="nav__item" href="#">Product</a></li>
-                  <li><a class="nav__item" href="#">Contact</a></li>
+                  <li><a class="nav__item" href="#product">Productos</a></li>
+                  <li><a class="nav__item" href="#cmt">Comentarios</a></li>
                </ul>
             </nav>
             <div class="cart">
@@ -37,8 +38,8 @@
       </div>
       <ul class="mobile-list">
          <li><a class="mobile-list__item" href="#">Specs</a></li>
-         <li><a class="mobile-list__item" href="#">Product</a></li>
-         <li><a class="mobile-list__item" href="#">Contact</a></li>
+         <li><a class="mobile-list__item" href="#product">Productos</a></li>
+         <li><a class="mobile-list__item" href="#cmt">Comentarios</a></li>
       </ul>
    </header>
 
@@ -69,7 +70,8 @@
    <section class="content">
       <div class="container-p">
          
-         <div class="laptops">
+         <div class="laptops" id="product">
+            <h1 class="tittle-product">Productos Destacados</h1>
             <div class="laptops__dell">
                <figure class="laptops__thumbnail">
                   <img class="laptops__img" src="assets/img/photo-of-laptop.jpg" alt="Laptop Dell">
@@ -107,7 +109,7 @@
       </div>
    </section>
 
-   <section class="commentaries">
+   <section class="commentaries" id="cmt">
       <div class="container-p">
 
          <div class="comment comment--view-mobile">
@@ -163,6 +165,45 @@
 
       </div>
    </section>
+
+   <footer class="footer">
+      <div class="container-p">
+
+         <div class="footer__wrap">
+            <div class="logo-footer">
+               <img class="logo-footer__img" src="assets/img/logo.svg" alt="Logo Three Dots Store">
+               <h3 class="logo-footer__brand">Three Dots Store</h3>
+            </div>
+            <div class="links-footer">
+               <ul class="links-footer__list-one">
+                  <li><a class="links-footer__item" href="#">Nosotros</a></li>
+                  <li><a class="links-footer__item" href="#">Contacto</a></li>
+                  <li><a class="links-footer__item" href="#">Sucursales</a></li>
+                  <li><a class="links-footer__item" href="#">FAQ</a></li>
+               </ul>
+               <ul class="links-footer__list-two">
+                  <li><a class="links-footer__item" href="#">Blog</a></li>
+                  <li><a class="links-footer__item" href="#">Política y Privacidad</a></li>
+                  <li><a class="links-footer__item" href="#">Productos</a></li>
+               </ul>
+            </div>
+            <div class="rrss-footer">
+               <div class="rrss-footer__social">
+                  <i class="rrss-footer__logo fab fa-instagram"></i>
+               </div>
+               <div class="rrss-footer__social">
+                  <i class="rrss-footer__logo fab fa-pinterest"></i>
+               </div>
+               <div class="rrss-footer__social">
+                  <i class="rrss-footer__logo fab fa-facebook"></i>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <p class="copyright__text">©Three Dots Store todos los derechos reservados</p>
+      </div>
+   </footer>
 
 
    <script src="js/script.js"></script>

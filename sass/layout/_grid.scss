@@ -12,7 +12,7 @@ body {
    font-family: $font;
    color: $colorFont;
    display: grid;
-   height: 3000px;
+   height: 100vh;
    grid-template: 60px 92vh 2fr 1fr 1fr / 1fr;
    grid-template-areas: 
       "header"

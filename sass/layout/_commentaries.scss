@@ -6,6 +6,7 @@
 .commentaries {
    grid-area: comments;
    align-self: center;
+   margin: 5rem 0 8rem;
 }
 
 .comment {
@@ -25,6 +26,17 @@
    font-size: 3rem;
    cursor: pointer;
    color: #551a8b;
+   will-change: transform;
+   transition: ease-out;
+   outline: none;
+   &:hover {
+      transition: .7s;
+      transform: translateY(-18px);
+   }
+   &:active {
+      transform: scale(.8);
+      color: $colorBtn;
+   }
 }
 
 .arrow-rigth, .arrow-left {
@@ -43,6 +55,11 @@
       color: #551a8b;
       margin: 15px 0;
       position: absolute;
+      outline: none;
+      &:active {
+         transform: scale(.8);
+         color: $colorBtn;
+      }
    }
    .arrow-left__element--mobile {
       left: 40px;

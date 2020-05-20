@@ -6,6 +6,7 @@ const btnActive = btns.querySelector('.button--active')
 const icon = document.querySelector('.wrap-menu__icon')
 const list = document.querySelector('.mobile-list')
 const links = document.querySelectorAll('.mobile-list li')
+const mobileLinks = document.querySelectorAll('.mobile-list__item')
 
 let itemCommentaries = 0
 const leftArrowDesk = document.querySelector('.arrow-left__element--desktop')
@@ -17,6 +18,7 @@ const two = document.getElementsByClassName('people__item-two')
 
 console.log(one)
 console.log(two)
+console.log(mobileLinks[1])
 
 icon.addEventListener('click', () => {
    list.classList.toggle('open')
@@ -25,7 +27,27 @@ icon.addEventListener('click', () => {
    });
 });
 
+mobileLinks[1].addEventListener('click', () => {
+   list.classList.toggle('open')
+   links.forEach(link => {
+      link.classList.toggle('fade')
+   });
+})
+mobileLinks[2].addEventListener('click', () => {
+   list.classList.toggle('open')
+   links.forEach(link => {
+      link.classList.toggle('fade')
+   });
+})
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+   anchor.addEventListener('click', function (e) {
+       e.preventDefault()
+       document.querySelector(this.getAttribute('href')).scrollIntoView({
+           behavior: 'smooth'
+       })
+   })
+})
 
 listener()
 function listener() {

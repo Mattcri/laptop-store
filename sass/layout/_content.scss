@@ -6,15 +6,24 @@
 
 .content {
    grid-area: conten;
-   background: #f1f0f0;
-   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
-   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
-   
+   background: $background;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
+   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
+   @include v-small {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+   }
+}
+
+.tittle-product {
+   font-size: 2rem;
+   text-align: center;
+   margin-top: 2rem;
 }
 
 .laptops {
    &__dell {
-      margin: 3rem 0;
+      margin: 2.5rem 0;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -22,6 +31,7 @@
          flex-flow: row;
          align-items: center;
          justify-content: center;
+         margin: 3rem 0;
       }
    }
    &__thumbnail {
@@ -85,10 +95,16 @@
       &--active {
          background: $colorBtn;
          color: #fff;
+         &:hover {
+            background: linear-gradient(to right, #d276c9eb, #ec67e1d4);
+         }
+         &:active {
+            color: $colorFont;
+         }
       }
    }
    &__macbook {
-      margin: 3rem 0;
+      margin: 2.5rem 0;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -96,6 +112,7 @@
          flex-flow: row-reverse;
          align-items: center;
          justify-content: center;
+         margin: 3rem 0;
       }
    }
 }

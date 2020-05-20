@@ -13,6 +13,7 @@
    font-family: $font;
    color: $colorBtn;
    font-size: 1rem;
+   outline: none;
    @include v-large {
       margin: 0 15px 0 0;
    }
