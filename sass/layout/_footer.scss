@@ -50,7 +50,7 @@
          margin: 0;
          margin-bottom: 15px;
          &:hover {
-            border-right: 1px solid $colorBtn;
+            border-right: 3px solid $colorBtn;
          }
       }
    }
@@ -59,7 +59,7 @@
       display: flex;
    }
    &__list-one {
-      border-bottom: 1px solid #551a8b;
+      border-bottom: 2px solid #551a8b;
       padding: 10px 0 15px;
       @include v-large {
          flex: 1;
@@ -68,7 +68,7 @@
       }
    }
    &__list-two {
-      border-bottom: 1px solid #551a8b;
+      border-bottom: 2px solid #551a8b;
       padding: 15px 0;
       @include v-large {
          flex: 1;
@@ -87,7 +87,7 @@
    display: flex;
    width: 90%;
    justify-content: center;
-   padding: 15px;
+   padding: 25px;
    @include v-large {
       width: 20%;
       padding: 5px;

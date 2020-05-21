@@ -4,6 +4,11 @@
 
 header {
    grid-area: header;
+   position: fixed;
+   width: 100%;
+   z-index: 999;
+   box-shadow: 0 4px 10px -2px grey;
+   background: $background;
 }
 
 .navigation {
@@ -102,9 +107,22 @@ header {
    &__item {
       text-decoration: none;
       color: $colorFont;
-      &:hover {
-         border-bottom: 2px solid $colorP;
-      }
+      position: relative;
+      font-weight: 600;
+      &:after {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 6px;
+         right: 6px;
+         height: 2px;
+         background:$colorBtn;
+         transform: scaleX(0);
+         transition: transform 450ms ease-in-out;
+       }
+       &:hover::after {
+          transform: scaleX(1);
+       }
    }
 }
 

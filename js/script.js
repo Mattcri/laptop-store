@@ -16,10 +16,6 @@ const rigthArrowMob = document.querySelector('.arrow-rigth__element--mobile')
 const one = document.getElementsByClassName('people__item-one')
 const two = document.getElementsByClassName('people__item-two')
 
-console.log(one)
-console.log(two)
-console.log(mobileLinks[1])
-
 icon.addEventListener('click', () => {
    list.classList.toggle('open')
    links.forEach(link => {
@@ -27,6 +23,12 @@ icon.addEventListener('click', () => {
    });
 });
 
+mobileLinks[0].addEventListener('click', () => {
+   list.classList.toggle('open')
+   links.forEach(link => {
+      link.classList.toggle('fade')
+   });
+})
 mobileLinks[1].addEventListener('click', () => {
    list.classList.toggle('open')
    links.forEach(link => {
