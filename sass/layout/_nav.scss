@@ -50,8 +50,8 @@ header {
    transition: all 1s ease-out;
    pointer-events: none;
    &.open {
-      clip-path: circle(765px at 10% -10%);
-      -webkit-clip-path: circle(765px at 10% -10%);
+      clip-path: circle(800px at 10% -10%);
+      -webkit-clip-path: circle(800px at 10% -10%);
       pointer-events: all;
    }
    @include v-large {

@@ -71,8 +71,8 @@ header {
   pointer-events: none;
 }
 .mobile-list.open {
-  clip-path: circle(765px at 10% -10%);
-  -webkit-clip-path: circle(765px at 10% -10%);
+  clip-path: circle(800px at 10% -10%);
+  -webkit-clip-path: circle(800px at 10% -10%);
   pointer-events: all;
 }
 @media only screen and (min-width: 768px) {
