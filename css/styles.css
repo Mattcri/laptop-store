@@ -280,7 +280,7 @@ main {
 
 .small-circle {
   position: absolute;
-  bottom: 0;
+  bottom: -13px;
   left: 20%;
   z-index: -1;
 }
