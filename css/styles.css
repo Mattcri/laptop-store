@@ -212,7 +212,8 @@ main {
   margin-top: 2rem;
 }
 .product__btns .button {
-  width: 130px;
+  min-width: 136px;
+  max-width: 139px;
   padding: 8px 10px;
   margin: 0 10px;
   border: 2px solid #c36cbb;
@@ -392,7 +393,8 @@ main {
   }
 }
 .laptops__buttons {
-  width: 130px;
+  min-width: 136px;
+  max-width: 139px;
   padding: 8px 10px;
   margin: 0 10px;
   border: 2px solid #c36cbb;
